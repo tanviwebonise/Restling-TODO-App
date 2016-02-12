@@ -1,4 +1,4 @@
-group 'org.webonise.todo'
+group 'com.webonise'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'groovy'
@@ -35,7 +35,7 @@ configurations{
 gretty {
     httpPort=8181
     servletContainer = 'tomcat8'
-    contextPath = "/"
+    contextPath = ""
 }
 
 repositories {
