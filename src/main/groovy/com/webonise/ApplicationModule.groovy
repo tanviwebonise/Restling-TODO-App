@@ -1,12 +1,13 @@
-package com.webonise.todo
+package com.webonise
 
+import com.webonise.routers.MetaRouter
 import groovy.transform.CompileStatic
 import restling.guice.modules.RestlingApplicationModule
 
 @CompileStatic
 class ApplicationModule extends RestlingApplicationModule{
 
-    Class<SimplestRouter> routerClass = SimplestRouter
+    Class<MetaRouter> routerClass = MetaRouter
 
     @Override
     void configureCustomBindings() {

@@ -1,13 +1,14 @@
-package com.webonise.todo
+package com.webonise.routers
 
 import groovy.transform.CompileStatic
 import restling.restlet.RestlingRouter
 
 @CompileStatic
-class FoosRouter extends RestlingRouter {
+class MetaRouter extends RestlingRouter {
+
     @Override
     void init() throws Exception {
 
-        attach("/hello",FoosResource)
+        attachSubRouter("/meta", GreetingRouter)
     }
 }
