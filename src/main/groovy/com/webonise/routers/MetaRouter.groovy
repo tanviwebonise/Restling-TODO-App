@@ -9,6 +9,7 @@ class MetaRouter extends RestlingRouter {
     @Override
     void init() throws Exception {
 
-        attachSubRouter("/meta", GreetingRouter)
+        attachSubRouter("/meta", SubRouter)
+
     }
 }

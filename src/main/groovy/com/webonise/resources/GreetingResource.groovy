@@ -12,6 +12,6 @@ class GreetingResource extends ServerResource {
     @Get
     String getGreeting() {
 
-        return "Hello, World!"
+        return "Hello, User!"
     }
 }
